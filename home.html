@@ -42,7 +42,7 @@
 								<div id="navbarBasicExample" class="navbar-menu">
 									<div class="navbar-start"></div>
 
-									<div class="navbar-end is-blueocean">
+									<div class="navbar-end">
 										<a class="navbar-item px-5 active">Home</a>
 
 										<a class="navbar-item px-5">Key Features</a>
@@ -510,7 +510,7 @@
 		<section class="section">
 			<div class="container has-text-centered">
 				<h3 class="title is-blueocean">Frequently asked questions</h3>
-				<p>
+				<p class="my-6">
 					The rise of mobile devices transforms the way we consume information entirely
 					<br class="is-hidden-mobile" />
 					and the world's most elevant channels such as Facebook.
@@ -519,14 +519,50 @@
         <div class="columns has-text-left is-centered">
           <div class="column is-8">
 
-            <div class="notification is-info-light">
-              <h4 class="subtitle"><strong>How to contact with riders emergency?</strong></h4>
-              
-              <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-              <p>
-
-              </p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring. </p>
-            </div>
+						<div id="accordion_first">
+							<article class="message">
+								<div class="message-header is-info-light has-text-grey-darker">
+									<p><a href="#collapsible-message-accordion-1" data-action="collapse">How Much?</a></p>
+								</div>
+								<div id="collapsible-message-accordion-1" class="message-body is-collapsible" data-parent="accordion_first">
+									<div class="message-body-content">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+										placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+										<a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+										sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
+										sem eget, facilisis sodales sem.
+									</div>
+								</div>
+							</article>
+							<article class="message">
+								<div class="message-header is-info-light has-text-grey-darker">
+									<p><a href="#collapsible-message-accordion-2" data-action="collapse">Need help?</a></p>
+								</div>
+								<div id="collapsible-message-accordion-2" class="message-body is-collapsible" data-parent="accordion_first">
+									<div class="message-body-content">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+										placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+										<a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+										sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
+										sem eget, facilisis sodales sem.
+									</div>
+								</div>
+							</article>
+							<article class="message">
+								<div class="message-header is-info-light has-text-grey-darker">
+									<p><a href="#collapsible-message-accordion-3" data-action="collapse">It is safe?</a></p>
+								</div>
+								<div id="collapsible-message-accordion-3" class="message-body is-collapsible" data-parent="accordion_first">
+									<div class="message-body-content">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+										placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+										<a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+										sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
+										sem eget, facilisis sodales sem.
+									</div>
+								</div>
+							</article>
+						</div>
 
           </div>
         </div>
@@ -543,8 +579,10 @@
             <p>The rise of mobile devices transforms the way we consume information entirely
               and the world's most elevant channels such as Facebook.</p>
             <div class="block my-6">
-              <img src="img/play-store.jpg" alt="">
-              <img class="ml-5" src="img/apple.jpg" alt="">
+							<figure><img src="img/play-store.jpg" alt=""></figure>
+							<figure><img src="img/apple.jpg" alt=""></figure>
+              
+              
             </div>
           </div>
             <div class="column is-6">
@@ -629,6 +667,12 @@
 			crossorigin="anonymous"
 		></script>
 
-    <script type="text/javascript" src="/node_modules/bulma-accordion/dist/js/bulma-accordion.min.js"></script>
+		<script type="text/javascript" src="bulma-collapsible.min.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const acordiones = bulmaCollapsible.attach('.is-collapsible');
+			})
+			</script>
 	</body>
 </html>
